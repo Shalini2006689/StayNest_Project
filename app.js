@@ -108,9 +108,9 @@ app.use((err, req, res, next) => {
   //res.status(statusCode).send(message);
 });
 
-// const port = process.env.PORT ;
+const PORT = process.env.PORT ;
 
 // some changes reamain
-app.listen(8080 , () => {
-    console.log("server is listening to port 8080");
+app.listen(PORT , () => {
+    console.log("server running on port", PORT);
 });
