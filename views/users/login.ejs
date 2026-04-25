@@ -1,0 +1,32 @@
+<% layout('/layouts/boilerplate.ejs') -%>
+
+<div class="login-wrapper">
+
+    <div class="login-box">
+
+        <h3 class="text-center mb-4">Login</h3>
+
+        <form action="/login" method="post" class="needs-validation" novalidate>
+
+            <div class="mb-3">
+                <label for="username" class="form-label">Username*</label>
+                <input id="username" name="username" type="text" class="form-control" required />
+            </div>
+
+            <div class="mb-3">
+                <label for="password" class="form-label">Password*</label>
+                <input id="password" name="password" type="password" class="form-control" required />
+            </div>
+
+            <button class="btn btn-danger w-100">Login</button>
+
+            <p class="text-center mt-3">
+                Do not have an account?
+                <a href="/signup" class="text-danger">Sign up</a>
+            </p>
+
+        </form>
+
+    </div>
+
+</div>

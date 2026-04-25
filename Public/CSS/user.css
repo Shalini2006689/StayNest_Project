@@ -1,0 +1,114 @@
+.auth-page {
+  min-height: calc(100vh - 13rem);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  padding: 2rem 0;
+}
+.auth-card {
+  width: min(
+    100%,
+    680px
+  );
+  padding: 2.5rem 2.25rem;
+  background:
+    radial-gradient(circle at top right, rgba(254, 66, 77), transparent 70%),
+    #0b0f14;
+  border: 1px solid rgba(255, 255, 255, 0.12);
+  border-radius: 1.25rem;
+  color: #e5e7e5;
+}
+
+.auth-card--compact {
+  width: min(100%, 580px);
+}
+
+.auth-header {
+  margin-bottom: 1.5rem;
+}
+
+.auth-kicker {
+  color: #ff0000c7;
+  font-size: 1.2rem;
+  letter-spacing: 0.1rem;
+  text-transform: uppercase;
+  font-weight: 700;
+  margin-bottom: 1.05rem;
+}
+.auth-header h1 {
+  color: #f9fafb;
+  font-weight: 700;
+  margin-bottom: 0.5rem;
+}
+.auth-subtitle {
+  color: #9ca3af;
+  margin-bottom: 0;
+}
+.auth-form .form-label {
+  color: #d1d5db;
+  font-weight: 500;
+  margin-bottom: 0.35rem;
+}
+.auth-form .form-control {
+  border: 1px solid #374151;
+  color: #000000;
+  border-radius: 0.75rem;
+  padding: 0.75rem 0.9rem;
+}
+
+.auth-form .form-control::placeholder {
+  color: #000000;
+}
+.auth-form .form-control:focus {
+  border-color: #9a0000e3;
+  color: #000000;
+}
+.auth-btn {
+  color: #ffffff;
+  border: none;
+  font-weight: 600;
+  border-radius: 999px;
+  padding: 0.6rem 1rem;
+  width: 95px;
+  background-color: #f30101;
+  justify-content: center;
+  justify-self: center;
+  align-items: center;
+  display: flex;
+}
+.auth-btn:hover {
+  transform: scale(1.1);
+  transition: 0.2s;
+  background-color: #f30101;
+  color: #ffffff;
+}
+ 
+.auth-switch{
+    margin-top: 1.25rem;
+    color: #9ca3af;
+    text-align: center;
+}
+.auth-switch a{
+    color: #f30101;
+    text-decoration: none;
+    font-weight: 600;
+}
+.auth-switch a:hover{
+    text-decoration: underline;
+}
+
+@media (max-width: 768px) {
+    .auth-page {
+        min-height: auto;
+        padding: 1.25rem 0;
+    }
+
+    .auth-card {
+        padding: 1.5rem 1rem;
+        border-radius: 1rem;
+    }
+
+    .auth-header h1 {
+        font-size: 1.7rem;
+    }
+}
